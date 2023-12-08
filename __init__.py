@@ -12,7 +12,7 @@ class DiscoSkill(OVOSSkill):
     def __init__(self):
         super().__init__()
         self.colors = ["blue", "yellow", "red", "orange", "green", "white", "purple", "cyan", "magenta", "pink"]
-        self.device = "moodlight"
+        self.device = "moodlight" # entity name of home assistant device
         self.interval = 1
         self.running = False
         self.disco_thread = None
