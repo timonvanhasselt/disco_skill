@@ -9,7 +9,7 @@ def get_percentage_brightness_from_ha_value(brightness):
     return round(int(brightness) / 255 * 100)
 
 class DiscoSkill(OVOSSkill):
-   def __init__(self, *args, **kwargs):
+    def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.colors = ["blue", "yellow", "red", "orange", "green", "white", "purple", "cyan", "magenta", "pink"]
         self.device = "moodlight" # entity name of home assistant device
